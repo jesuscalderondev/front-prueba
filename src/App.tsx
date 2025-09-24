@@ -6,6 +6,17 @@ import { Header } from './components/Headers'
 import { TargetItem } from './components/TargetItem'
 import CardTeacher from './components/CardTeachers';
 import NewsletterBackground from './components/BacgroundDecorated';
+import kidReadImg from './assets/kidRead.png';
+import womanLearnImg from './assets/womanLearn.png';
+import drawFirstImg from './assets/drawFirst.png';
+import drawLastImg from './assets/drawLast.png';
+import iconLearn from './assets/iconLearn.png';
+import iconGet from './assets/iconGet.png';
+import iconEarn from './assets/iconEarn.png';
+import iconHeart from './assets/iconHeart.png';
+import iconPuzzles from './assets/iconPuzzles.png';
+import iconInsta from './assets/iconInsta.png';
+import iconLink from './assets/iconLink.png';
 
 const myCourseData = {
   category: "UI/UX Design",
@@ -15,7 +26,7 @@ const myCourseData = {
   courses: 34,
   sales: 250,
   rating: 4.8,
-  imageSrc: "src/assets/kidRead.png"
+  imageSrc: kidReadImg
 };
 
 const myCourseData2 = {
@@ -26,7 +37,7 @@ const myCourseData2 = {
   courses: 34,
   sales: 250,
   rating: 4.8,
-  imageSrc: "src/assets/womanLearn.png"
+  imageSrc: womanLearnImg
 };
 
 
@@ -57,8 +68,8 @@ const teacher1 = {
   bio: "Ut enim ad minim veniam, quis nost exercitation ullamco laboris nisi ut aliquip ex commodo.",
   category: "Engineering physics",
   socials: [
-    { name: 'Instagram', icon: 'src/assets/iconInsta.png', url: 'https://instagram.com' },
-    { name: 'LinkedIn', icon: 'src/assets/iconLink.png', url: 'https://linkedin.com' },
+    { name: 'Instagram', icon: iconInsta, url: 'https://instagram.com' },
+    { name: 'LinkedIn', icon: iconLink, url: 'https://linkedin.com' },
   ],
   imageSrc: "https://unavatar.io/github/midudev",
 };
@@ -69,8 +80,8 @@ const teacher2 = {
   bio: "Ut enim ad minim veniam, quis nost exercitation ullamco laboris nisi ut aliquip ex commodo.",
   category: "Engineering physics",
   socials: [
-    { name: 'Instagram', icon: 'src/assets/iconInsta.png', url: 'https://instagram.com' },
-    { name: 'LinkedIn', icon: 'src/assets/iconLink.png', url: 'https://linkedin.com' },
+    { name: 'Instagram', icon: iconInsta, url: 'https://instagram.com' },
+    { name: 'LinkedIn', icon: iconLink, url: 'https://linkedin.com' },
   ],
   imageSrc: "https://unavatar.io/github/jesuscalderondev",
 };
@@ -81,8 +92,8 @@ const teacher3 = {
   bio: "Ut enim ad minim veniam, quis nost exercitation ullamco laboris nisi ut aliquip ex commodo.",
   category: "Engineering physics",
   socials: [
-    { name: 'Instagram', icon: 'src/assets/iconInsta.png', url: 'https://instagram.com' },
-    { name: 'LinkedIn', icon: 'src/assets/iconLink.png', url: 'https://linkedin.com' },
+    { name: 'Instagram', icon: iconInsta, url: 'https://instagram.com' },
+    { name: 'LinkedIn', icon: iconLink, url: 'https://linkedin.com' },
   ],
   imageSrc: "https://unavatar.io/github/mouredev",
 };
@@ -111,24 +122,24 @@ function App() {
               <button className="bg-purple-950/85 hover:bg-purple-900 flex-shrink-0 px-8 py-3 ml-2 text-white font-semibold rounded-full shadow-lg transition duration-200 cursor-pointer">Continue</button>
             </div>
           </div>
-          <img src="../src/assets/drawFirst.png" alt="Imagen de muestra para secction" width={800}/>
+          <img src={drawFirstImg} alt="Imagen de muestra para secction" width={800}/>
         </section>
 
         <div className="sm:mx-30 px-5 mx-14 my-10 bg-purple-950/85 rounded-lg flex lg:flex-row text-white flex-col justify-between items-center gap-5 py-12">
           <TargetItem
-            icon='../src/assets/iconLearn.png'
+            icon={iconLearn}
             title='Learn The Latest Skills'
             description='Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.'
           />
 
           <TargetItem
-            icon='../src/assets/iconGet.png'
+            icon={iconGet}
             title='Get Ready For a Career'
             description='Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.'
           />
 
           <TargetItem
-            icon='../src/assets/iconEarn.png'
+            icon={iconEarn}
             title='Earn a Certificate'
             description='Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.'
           />
@@ -156,21 +167,21 @@ function App() {
         </section>
 
         <section className='sm:px-20 px-4 flex flex-col lg:flex-row justify-between items-center gap-20 mt-20'>
-          <img className='p-10' src="src/assets/drawLast.png" alt="Imagen de muestra para section" width={500}/>
+          <img className='p-10' src={drawLastImg} alt="Imagen de muestra para section" width={500}/>
 
           <div className="flex flex-col justify-start items-start w-full">
             <h1 className="text-7xl font-bold text-wrap text-slate-950">Premium <span className='text-orange-500'>Learning</span> Experience </h1>
             
             <div className="flex flex-col">
               <TargetItem
-                icon='src/assets/iconHeart.png'
+                icon={iconHeart}
                 title='Easily Accessible'
                 description='Learning Will fell Very Comfortable With Courslab.'
                 iconBg='purple'
               />  
 
               <TargetItem
-                icon='src/assets/iconPuzzles.png'
+                icon={iconPuzzles}
                 title='Fun learning expe'
                 description='Learning Will fell Very Comfortable With Courslab.'
                 iconBg='purple'

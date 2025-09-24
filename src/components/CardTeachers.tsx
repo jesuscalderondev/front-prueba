@@ -62,7 +62,7 @@ export const CardTeacher: React.FC<CardTeacherProps> = ({ data }) => {
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-gray-800 transition duration-150"
               >
-                <img src={`${social.icon}`} alt={`${social.name}`} width={30}/>
+                <img src={social.icon} alt={`${social.name}`} width={30}/>
               </a>
             ))}
           </div>

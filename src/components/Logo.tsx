@@ -1,5 +1,6 @@
 import React from 'react';
-
+import logoSrc from '../assets/logo.png';
+ 
 type LogoSize = 'xs' | 's' | 'm' | 'lg';
 
 interface LogoProps {
@@ -18,6 +19,6 @@ export const Logo: React.FC<LogoProps> = ({ size = 'm'}) => {
     const sizeClass = sizeMap[size] || sizeMap.m;
 
     return (
-        <img src="src/assets/logo.png" alt="Book Store" className={`${sizeClass}`}/>
+        <img src={logoSrc} alt="Book Store" className={`${sizeClass}`}/>
     );
 };
