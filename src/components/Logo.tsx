@@ -18,6 +18,6 @@ export const Logo: React.FC<LogoProps> = ({ size = 'm'}) => {
     const sizeClass = sizeMap[size] || sizeMap.m;
 
     return (
-        <img src="../../public/logo.png" alt="Book Store" className={`${sizeClass}`}/>
+        <img src="src/assets/logo.png" alt="Book Store" className={`${sizeClass}`}/>
     );
 };

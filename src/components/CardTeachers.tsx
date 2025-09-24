@@ -1,9 +1,8 @@
 import React from 'react';
-import type { Instagram, Linkedin, LucideIcon } from 'lucide-react';
 
 interface ITeacherSocial {
   name: string;
-  icon: LucideIcon;
+  icon: string;
   url: string;
 }
 
@@ -63,7 +62,7 @@ export const CardTeacher: React.FC<CardTeacherProps> = ({ data }) => {
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-gray-800 transition duration-150"
               >
-                <social.icon className="w-6 h-6" />
+                <img src={`${social.icon}`} alt={`${social.name}`} width={30}/>
               </a>
             ))}
           </div>
