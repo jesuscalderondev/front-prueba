@@ -53,6 +53,9 @@ export const Footer = () => {
                 </div>
             </div>
             <hr className='text-gray-400' />
+            <p className="text-gray-400 font-medium text-center mt-5">
+                BookStore All Right Reserved, 2022
+            </p>
         </footer>
     );
 };
