@@ -6,8 +6,10 @@ const NewsletterBackground: React.FC<NewsletterBackgroundProps> = ({ }) => {
   return (
     <div 
       className="
-        relative h-80 p-8 flex flex-col items-center justify-center
+        relative h-100 py-20 lg:py-0 
+        flex flex-col items-center justify-start
         overflow-hidden rounded-xl bg-purple-950/90
+        sm:justify-center
       "
       style={{
         backgroundImage: `
@@ -32,6 +34,7 @@ const NewsletterBackground: React.FC<NewsletterBackgroundProps> = ({ }) => {
         `
       }}
     >
+      <div className="py-20 sm:py-0">
         <h2 className="text-3xl font-bold text-white mb-2 z-10">
         Subscribe to our newsletter
         </h2>
@@ -43,6 +46,7 @@ const NewsletterBackground: React.FC<NewsletterBackgroundProps> = ({ }) => {
             </div>
             <button className="bg-orange-500 hover:bg-orange-600 flex-shrink-0 px-8 py-3 ml-2 text-white font-semibold rounded-full shadow-lg transition duration-200 cursor-pointer">Send</button>
         </div>
+      </div>
     </div>
   );
 };
